@@ -1,0 +1,3 @@
+use gym
+
+db.MuscleGroup.insertMany([{"name": "Chest"}, {"name": "Back"}, {"name": "Shoulders"}, {"name": "Legs"}, {"name": "Biceps"}, {"name": "Triceps"}, {"name": "Abs"}, {"name": "Cardio"}])
