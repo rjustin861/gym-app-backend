@@ -22,6 +22,11 @@ const db_training = db.model('training', {
     }, 
     end_date: {
         type: Date
+    },
+    routine: {
+		type: ObjectId,
+		ref: 'routine',
+        required: true
     }
 })
 

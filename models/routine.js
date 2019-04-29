@@ -17,6 +17,11 @@ const db_routine = db.model('routine', {
         required: true,
         default: Date.now
     }, 
+    exercise: {
+		type: ObjectId,
+		ref: 'exercise',
+        required: true
+    },
     set: {
         type: Number,
         required: true

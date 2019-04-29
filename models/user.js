@@ -12,8 +12,7 @@ const db_user = db.model('user', {
 		type: Number,
 		select: false
 	},
-	name: [
-		{
+	name: {
 			first_name: {
 				type: String,
 				required: true
@@ -22,8 +21,8 @@ const db_user = db.model('user', {
 				type: String,
 				required: true
 			}
-		}
-	],
+	}
+	,
 	email: {
 		type: String,
 		required: true,
@@ -44,7 +43,12 @@ const db_user = db.model('user', {
 		type: Date,
 		required: true,
 		default: Date.now
-	}
+	},
+	training: {
+		type: ObjectId,
+		ref: 'training',
+        required: true
+    }
 })
 
 // Export

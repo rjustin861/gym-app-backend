@@ -15,6 +15,11 @@ const db_exercise = db.model('exercise', {
     name: {
         type: String,
         required: true
+    },
+    muscle_group: {
+        type: ObjectId,
+        ref: 'muscle_group',
+        required: true  
     }
 })
 
