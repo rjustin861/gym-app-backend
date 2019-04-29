@@ -1,0 +1,14 @@
+db.Exercise.insertMany(
+    [
+            { "muscle_group": ObjectId("5cc583364641c09fb1fe0587"),
+             "name": "Cycling"
+             },
+             {
+            "muscle_group": ObjectId("5cc583364641c09fb1fe0587"), 
+            "name": "Jumping Rope"
+            },
+            {
+            "muscle_group": ObjectId("5cc583364641c09fb1fe0587"),
+            "name": "Burpees"
+            }
+    ])

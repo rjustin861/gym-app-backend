@@ -32,7 +32,9 @@ const db_routine = db.model('routine', {
     }, 
     weight: {
         type: Number,
-        required: true
+    },
+    length: {
+        type: Number
     }
 })
 
