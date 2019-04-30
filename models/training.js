@@ -6,7 +6,6 @@ const mongoose = require('mongoose')
 let schema = mongoose.Schema
 let ObjectId = schema.Types.ObjectId
 
-// Create schema for message
 const db_training = db.model('training', {
 	__v: {
 		type: Number,
