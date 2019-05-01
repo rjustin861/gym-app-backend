@@ -6,6 +6,14 @@ const mongoose = require('mongoose')
 let schema = mongoose.Schema
 let ObjectId = schema.Types.ObjectId
 
+var muscle_group = new Schema (
+    {
+        name: {
+            type: String
+        }
+    }
+)
+
 // Create schema for message
 const db_exercise = db.model('exercise', {
 	__v: {
@@ -16,11 +24,7 @@ const db_exercise = db.model('exercise', {
         type: String,
         required: true
     },
-    muscle_group: {
-        type: ObjectId,
-        ref: 'muscle_group',
-        required: true  
-    }
+    muscle_group: [muscle_group]
 })
 
 // Export
