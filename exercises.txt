@@ -1,0 +1,167 @@
+/* 1 */
+{
+    "_id" : ObjectId("5cc71ef1208ad488f01347a6"),
+    "muscle_group" : ObjectId("5cc583364641c09fb1fe0580"),
+    "name" : "Barbell Bench Press"
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5cc71ef1208ad488f01347a7"),
+    "muscle_group" : ObjectId("5cc583364641c09fb1fe0580"),
+    "name" : "Machine Chest Press"
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5cc71ef1208ad488f01347a8"),
+    "muscle_group" : ObjectId("5cc583364641c09fb1fe0580"),
+    "name" : "Push up"
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("5cc72001208ad488f01347a9"),
+    "muscle_group" : ObjectId("5cc583364641c09fb1fe0581"),
+    "name" : "Barbell Deadlift"
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("5cc72001208ad488f01347aa"),
+    "muscle_group" : ObjectId("5cc583364641c09fb1fe0581"),
+    "name" : "Cable Row"
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("5cc72001208ad488f01347ab"),
+    "muscle_group" : ObjectId("5cc583364641c09fb1fe0581"),
+    "name" : "Pull up"
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("5cc720f3208ad488f01347af"),
+    "muscle_group" : ObjectId("5cc583364641c09fb1fe0582"),
+    "name" : "Barbell Push Press"
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("5cc720f3208ad488f01347b0"),
+    "muscle_group" : ObjectId("5cc583364641c09fb1fe0582"),
+    "name" : "Dumbbell Lateral Raise"
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("5cc720f3208ad488f01347b1"),
+    "muscle_group" : ObjectId("5cc583364641c09fb1fe0582"),
+    "name" : "Dumbbell Front Raise"
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("5cc721cf208ad488f01347b2"),
+    "muscle_group" : ObjectId("5cc583364641c09fb1fe0583"),
+    "name" : "Squat"
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("5cc721cf208ad488f01347b3"),
+    "muscle_group" : ObjectId("5cc583364641c09fb1fe0583"),
+    "name" : "Lunge"
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("5cc721cf208ad488f01347b4"),
+    "muscle_group" : ObjectId("5cc583364641c09fb1fe0583"),
+    "name" : "Lying Leg Curl"
+}
+
+/* 13 */
+{
+    "_id" : ObjectId("5cc72286208ad488f01347b5"),
+    "muscle_group" : ObjectId("5cc583364641c09fb1fe0584"),
+    "name" : "Barbell Curl"
+}
+
+/* 14 */
+{
+    "_id" : ObjectId("5cc72286208ad488f01347b6"),
+    "muscle_group" : ObjectId("5cc583364641c09fb1fe0584"),
+    "name" : "Dumbell Curl"
+}
+
+/* 15 */
+{
+    "_id" : ObjectId("5cc72286208ad488f01347b7"),
+    "muscle_group" : ObjectId("5cc583364641c09fb1fe0584"),
+    "name" : "Overhead Cable Curl"
+}
+
+/* 16 */
+{
+    "_id" : ObjectId("5cc7234d208ad488f01347b8"),
+    "muscle_group" : ObjectId("5cc583364641c09fb1fe0585"),
+    "name" : "Bar Skullcrasher"
+}
+
+/* 17 */
+{
+    "_id" : ObjectId("5cc7234d208ad488f01347b9"),
+    "muscle_group" : ObjectId("5cc583364641c09fb1fe0585"),
+    "name" : "Triceps Pushdown Rope"
+}
+
+/* 18 */
+{
+    "_id" : ObjectId("5cc7234d208ad488f01347ba"),
+    "muscle_group" : ObjectId("5cc583364641c09fb1fe0585"),
+    "name" : "Bench Dips"
+}
+
+/* 19 */
+{
+    "_id" : ObjectId("5cc72405208ad488f01347bb"),
+    "muscle_group" : ObjectId("5cc583364641c09fb1fe0586"),
+    "name" : "Crunch"
+}
+
+/* 20 */
+{
+    "_id" : ObjectId("5cc72405208ad488f01347bc"),
+    "muscle_group" : ObjectId("5cc583364641c09fb1fe0586"),
+    "name" : "Hanging Leg Raise"
+}
+
+/* 21 */
+{
+    "_id" : ObjectId("5cc72405208ad488f01347bd"),
+    "muscle_group" : ObjectId("5cc583364641c09fb1fe0586"),
+    "name" : "Russian Twist"
+}
+
+/* 22 */
+{
+    "_id" : ObjectId("5cc724a6208ad488f01347be"),
+    "muscle_group" : ObjectId("5cc583364641c09fb1fe0587"),
+    "name" : "Cycling"
+}
+
+/* 23 */
+{
+    "_id" : ObjectId("5cc724a6208ad488f01347bf"),
+    "muscle_group" : ObjectId("5cc583364641c09fb1fe0587"),
+    "name" : "Jumping Rope"
+}
+
+/* 24 */
+{
+    "_id" : ObjectId("5cc724a6208ad488f01347c0"),
+    "muscle_group" : ObjectId("5cc583364641c09fb1fe0587"),
+    "name" : "Burpees"
+}

@@ -4,8 +4,12 @@ module.exports = function(app){
 
 	// ### API ###
 
-	// Auth
-	// app.post('/api/signup', require('./controllers/signup'))
-	// app.post('/api/login', require('./controllers/login'))
-	// app.get('/api/logout', require('./controllers/logout'))
+	//Auth
+	app.post('/api/signup', require('./controllers/signup'))
+
+
+
+	//users
+	app.get('/api/users', require('./controllers/users_get'))
+	app.post('/api/users', require('./controllers/user_post'))
 }

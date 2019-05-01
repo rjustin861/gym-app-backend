@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 let schema = mongoose.Schema
 let ObjectId = schema.Types.ObjectId
 
-var exercise_log = new Schema (
+var exercise_log = new schema (
 	{
 		exercise: {
 			type: String,
@@ -26,7 +26,7 @@ var exercise_log = new Schema (
 	}
 )
 
-var workout = new Schema (
+var workout = new schema (
 	{
 		start_date: {
 			type: Date
@@ -34,7 +34,9 @@ var workout = new Schema (
 		end_date: {
 			type: Date
 		},
-		exercise_log: [exercise_log]
+		exercise_log: {
+			type: [exercise_log]
+		}
 	}
 )
 
@@ -69,7 +71,9 @@ const db_user = db.model('user', {
 		required: true,
 		default: Date.now
 	},
-	workout: [workout]
+	workout: {
+		type: [workout]
+	}
 })
 
 // Export

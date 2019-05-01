@@ -1,0 +1,53 @@
+/* 1 */
+{
+    "_id" : ObjectId("5cc583364641c09fb1fe0580"),
+    "name" : "Chest"
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5cc583364641c09fb1fe0581"),
+    "name" : "Back"
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5cc583364641c09fb1fe0582"),
+    "name" : "Shoulders"
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("5cc583364641c09fb1fe0583"),
+    "name" : "Legs"
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("5cc583364641c09fb1fe0584"),
+    "name" : "Biceps"
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("5cc583364641c09fb1fe0585"),
+    "name" : "Triceps"
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("5cc583364641c09fb1fe0586"),
+    "name" : "Abs"
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("5cc583364641c09fb1fe0587"),
+    "name" : "Cardio"
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("5cc82234fed6ddff79167a99"),
+    "name" : "Gluteus"
+}

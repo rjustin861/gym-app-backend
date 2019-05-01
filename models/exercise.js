@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 let schema = mongoose.Schema
 let ObjectId = schema.Types.ObjectId
 
-var muscle_group = new Schema (
+var muscle_group = new schema (
     {
         name: {
             type: String
@@ -24,7 +24,10 @@ const db_exercise = db.model('exercise', {
         type: String,
         required: true
     },
-    muscle_group: [muscle_group]
+    muscle_group: {
+        type: [muscle_group],
+        required: true
+    } 
 })
 
 // Export
