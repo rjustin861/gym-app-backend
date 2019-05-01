@@ -6,6 +6,38 @@ const mongoose = require('mongoose')
 let schema = mongoose.Schema
 let ObjectId = schema.Types.ObjectId
 
+var exercise_log = new Schema (
+	{
+		exercise: {
+			type: String,
+		},
+		repetitions: {
+			type: Number
+		},
+		set: {
+			type: Number
+		},
+		weight: {
+			type: Number
+		},
+		duration: {
+			type: Number
+		}
+	}
+)
+
+var workout = new Schema (
+	{
+		start_date: {
+			type: Date
+		},
+		end_date: {
+			type: Date
+		},
+		exercise_log: [exercise_log]
+	}
+)
+
 // Create schema for user
 const db_user = db.model('user', {
 	__v: {
@@ -13,16 +45,9 @@ const db_user = db.model('user', {
 		select: false
 	},
 	name: {
-			first_name: {
-				type: String,
-				required: true
-			},
-			last_name: {
-				type: String,
-				required: true
-			}
-	}
-	,
+		type: String,
+		required: true
+	},
 	email: {
 		type: String,
 		required: true,
@@ -44,11 +69,7 @@ const db_user = db.model('user', {
 		required: true,
 		default: Date.now
 	},
-	training: {
-		type: ObjectId,
-		ref: 'training',
-        required: true
-    }
+	workout: [workout]
 })
 
 // Export
