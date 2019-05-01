@@ -15,6 +15,10 @@ app.use(body_parser.urlencoded({ // understands form submits
 }))
 app.use(cors())
 
+// Auth
+require('./auth.js')(app)
+
+
 
 // Routes
 require('./routes-api.js')(app)

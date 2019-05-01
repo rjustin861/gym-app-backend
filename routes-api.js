@@ -6,6 +6,7 @@ module.exports = function(app){
 
 	//Auth
 	app.post('/api/signup', require('./controllers/signup'))
+	app.post('/api/login', require('./controllers/login'))
 
 
 
