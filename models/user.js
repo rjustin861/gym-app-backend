@@ -22,6 +22,10 @@ var exercise_log = new schema (
 		},
 		duration: {
 			type: Number
+		},
+		__v: {
+			type: Number,
+			select: false
 		}
 	}
 )
@@ -36,6 +40,10 @@ var workout = new schema (
 		},
 		exercise_log: {
 			type: [exercise_log]
+		},
+		__v: {
+			type: Number,
+			select: false
 		}
 	}
 )
@@ -64,7 +72,8 @@ const db_user = db.model('user', {
 	},
 	password: {
 		type: String,
-		required: true
+		required: true,
+		select: false
 	},
 	created: {
 		type: Date,

@@ -10,6 +10,10 @@ var muscle_group = new schema (
     {
         name: {
             type: String
+        },
+        __v: {
+            type: Number,
+            select: false
         }
     }
 )
@@ -27,7 +31,11 @@ const db_exercise = db.model('exercise', {
     muscle_group: {
         type: [muscle_group],
         required: true
-    } 
+    },
+    __v: {
+		type: Number,
+		select: false
+	}
 })
 
 // Export
