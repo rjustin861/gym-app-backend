@@ -10,8 +10,7 @@ module.exports = function(req, res, next) {
     let workout = req.body.workout
     console.log('workout', workout)
     
-    db_user.findOneAndUpdate({_id:userid}, 
-        {$push: {workout:workout}})
+    db_user.findOneAndUpdate( {_id:userid}, {$push: {workout:workout}}, {new: true})
         .then(function(new_workout) {
         res.status(200).json(new_workout)
 	})
