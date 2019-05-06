@@ -8,7 +8,10 @@ module.exports = function(app){
 	app.post('/api/signup', require('./controllers/signup'))
 	app.post('/api/login', require('./controllers/login'))
 
-
+	//Exercise
+	app.get('/api/exercises', require('./controllers/exercises_get'));
+	app.get('/api/exercise', require('./controllers/exercise_get'));
+	app.post('/api/exercise', require('./controllers/exercise_post'));
 
 	//users
 	app.get('/api/users', require('./controllers/users_get'))

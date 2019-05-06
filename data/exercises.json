@@ -1,0 +1,222 @@
+[
+{
+	"name": "Bench Press",
+	"muscle_group": ["Chest"]
+},
+{
+	"name": "Incline Press",
+	"muscle_group": ["Chest"]
+},
+{
+	"name": "Decline Press",
+	"muscle_group": ["Chest"]
+},
+{
+	"name": "Dumbbell Press",
+	"muscle_group": ["Chest"]
+},
+{
+	"name": "Incline Dumbbell Press",
+	"muscle_group": ["Chest"]
+},
+{
+	"name": "Decline Dumbbell Press",
+	"muscle_group": ["Chest"]
+},
+{
+	"name": "Dips",
+	"muscle_group": ["Chest"]
+},
+{
+	"name": "Dumbbell Pullover",
+	"muscle_group": ["Chest"]
+},
+{
+	"name": "Cable Crossover",
+	"muscle_group": ["Chest"]
+},
+{
+	"name": "Dumbbell Fly",
+	"muscle_group": ["Chest"]
+},
+{
+	"name": "Pec Fly",
+	"muscle_group": ["Chest"]
+},
+{
+	"name": "Push Up",
+	"muscle_group": ["Chest"]
+},
+{
+	"name": "Bent Over Barbell Row",
+	"muscle_group": ["Back"]
+},
+{
+	"name": "Pull Up",
+	"muscle_group": ["Back"]
+},
+{
+	"name": "Seated Cable Row",
+	"muscle_group": ["Back"]
+},
+{
+	"name": "Lat Pull Down",
+	"muscle_group": ["Back"]
+},
+{
+	"name": "Close Grip Lat Pull Down",
+	"muscle_group": ["Back"]
+},
+{
+	"name": "Single Arm Dumbbell Row",
+	"muscle_group": ["Back"]
+},
+{
+	"name": "Chin Up",
+	"muscle_group": ["Back"]
+},
+{
+	"name": "Deadlift",
+	"muscle_group": ["Back"]
+},
+{
+	"name": "Military Press",
+	"muscle_group": ["Shoulders"]
+},
+{
+	"name": "Dumbbell Press",
+	"muscle_group": ["Shoulders"]
+},
+{
+	"name": "Side Lateral Raise",
+	"muscle_group": ["Shoulders"]
+},
+{
+	"name": "Front Lateral Raise",
+	"muscle_group": ["Shoulders"]
+},
+{
+	"name": "Arnold Press",
+	"muscle_group": ["Shoulders"]
+},
+{
+	"name": "Upright Row",
+	"muscle_group": ["Shoulders"]
+},
+{
+	"name": "Dumbbell Shrug",
+	"muscle_group": ["Shoulders"]
+},
+{
+	"name": "Squat",
+	"muscle_group": ["Legs"]
+},
+{
+	"name": "Wide/Sumo Squat",
+	"muscle_group": ["Legs"]
+},
+{
+	"name": "Front Squat",
+	"muscle_group": ["Legs"]
+},
+{
+	"name": "Overhead Squat",
+	"muscle_group": ["Legs"]
+},
+{
+	"name": "Lunges",
+	"muscle_group": ["Legs"]
+},
+{
+	"name": "Single Leg Press",
+	"muscle_group": ["Legs"]
+},
+{
+	"name": "Leg Press",
+	"muscle_group": ["Legs"]
+},
+{
+	"name": "Leg Extension",
+	"muscle_group": ["Legs"]
+},
+{
+	"name": "Leg Curl",
+	"muscle_group": ["Legs"]
+},
+{
+	"name": "Calf Raise",
+	"muscle_group": ["Legs"]
+},
+{
+	"name": "EZ Bar Curl",
+	"muscle_group": ["Biceps"]
+},
+{
+	"name": "Barbell Curl",
+	"muscle_group": ["Biceps"]
+},
+{
+	"name": "Dumbbell Curl",
+	"muscle_group": ["Biceps"]
+},
+{
+	"name": "Hammer Curl",
+	"muscle_group": ["Biceps"]
+},
+{
+	"name": "Single Arm Concentration Curl",
+	"muscle_group": ["Biceps"]
+},
+{
+	"name": "Single Arm Overhead Triceps Extension",
+	"muscle_group": ["Triceps"]
+},
+{
+	"name": "Overhead Triceps Extension",
+	"muscle_group": ["Triceps"]
+},
+{
+	"name": "Lying Triceps Extension",
+	"muscle_group": ["Triceps"]
+},
+{
+	"name": "Rope Triceps Push Down",
+	"muscle_group": ["Triceps"]
+},
+{
+	"name": "Crunch",
+	"muscle_group": ["Abs"]
+},
+{
+	"name": "Decline Crunch",
+	"muscle_group": ["Abs"]
+},
+{
+	"name": "Hanging Leg Raise",
+	"muscle_group": ["Abs"]
+},
+{
+	"name": "Hanging Knee Raise",
+	"muscle_group": ["Abs"]
+},
+{
+	"name": "Plank",
+	"muscle_group": ["Abs"]
+},
+{
+	"name": "Side Plank",
+	"muscle_group": ["Abs"]
+},
+{
+	"name": "Sit Up",
+	"muscle_group": ["Abs"]
+},
+{
+	"name": "Burpees",
+	"muscle_group": ["Legs", "Abs", "Chest"]
+},
+{
+	"name": "Kettlebell Swing",
+	"muscle_group": ["Legs", "Shoulders"]
+}
+]
