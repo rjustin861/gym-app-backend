@@ -4,7 +4,6 @@ const db = require('../db')
 const mongoose = require('mongoose')
 
 let schema = mongoose.Schema
-let ObjectId = schema.Types.ObjectId
 
 var exercise_log = new schema (
 	{
@@ -22,6 +21,9 @@ var exercise_log = new schema (
 		},
 		duration: {
 			type: Number
+		},
+		muscle_group: {
+			type: [String]
 		},
 		__v: {
 			type: Number,
