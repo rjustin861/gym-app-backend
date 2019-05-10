@@ -74,8 +74,7 @@ const db_user = db.model('user', {
 	},
 	password: {
 		type: String,
-		required: true,
-		select: false
+		required: true
 	},
 	created: {
 		type: Date,
