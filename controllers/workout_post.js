@@ -3,10 +3,9 @@ const db_user = require('../models/user')
 
 module.exports = function(req, res, next) {
 
-    let userid = req.query.user_id
-
-    // this is temporary
-    userid = '5cc94f1112c41412abe3a553'
+    console.log('request inside workput post', req.user._id)
+    
+    let userid = req.user._id
     let workout = req.body.workout
     console.log('workout', workout)
     
