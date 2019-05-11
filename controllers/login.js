@@ -17,8 +17,7 @@ module.exports = function(req, res, next) {
 				return next(err)
 			}
 
-			// res.redirect('/')
-			const token = jwt.sign(user.toJSON(), process.env.SESSION_SECRET)
+			const token = jwt.sign(user.toJSON(), process.env.SESSION_SECRET, { expiresIn: '7d' })
 			res.setHeader('access-token', token)
 			return res.status(200).json(user)
 		})
