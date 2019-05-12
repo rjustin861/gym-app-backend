@@ -5,41 +5,15 @@ const moment = require('moment')
 
 module.exports = function(req, res, next) {
 
-    let userid = req.query.user_id
-    const start = moment.utc(req.query.start, 'yyyy-MM-DD').toDate()
-    const end = moment.utc(req.query.end, 'yyyy-MM-DD').endOf('Day').toDate()
+    let userid = req.user._id
+    //const start = moment.utc(req.query.start, 'yyyy-MM-DD').toDate()
+    //const end = moment.utc(req.query.end, 'yyyy-MM-DD').endOf('Day').toDate()
 
-    console.log('start', start)
-    console.log('end', end)
-    
-    // this is temporary
-    userid = '5cc94f1112c41412abe3a553'
+    //console.log('start', start)
+    //console.log('end', end)
+
     let id = mongoose.Types.ObjectId(userid)
     
-    // db_user.aggregate([
-    //     {
-    //         $unwind: "$workout"
-    //     },
-    //     {
-    //         $match: 
-    //         {
-    //             _id: id,
-    //             "workout.start_date": {$gte: start, $lte: end}
-    //         }
-    //     },
-    //     {
-    //         $group:
-    //         {
-    //             _id: "$_id",
-    //             workout: {$push: "$workout"}
-    //         }
-    //     },
-    //     {
-    //         $project:
-    //         {
-    //             workout: 1
-    //         }
-    //     }
     db_user.aggregate([
         {
             $match: {_id: id}
@@ -47,13 +21,13 @@ module.exports = function(req, res, next) {
         {
             $unwind: "$workout"
         },
-        {
-            $match: 
-            { 
-                "workout._id" : {$exists: true},
-                "workout.start_date": {$gte: start, $lte: end}
-            }
-        },
+        // {
+        //     $match: 
+        //     { 
+        //         "workout._id" : {$exists: true},
+        //         "workout.start_date": {$gte: start, $lte: end}
+        //     }
+        // },
         {
             $unwind: "$workout.exercise_log"
         },
