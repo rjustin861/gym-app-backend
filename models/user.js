@@ -83,6 +83,10 @@ const db_user = db.model('user', {
 	},
 	workout: {
 		type: [workout]
+	},
+	location: {
+		long: Number,
+		lat: Number
 	}
 })
 
