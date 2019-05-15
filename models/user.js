@@ -5,7 +5,7 @@ const mongoose = require('mongoose')
 
 let schema = mongoose.Schema
 
-var exercise_log = new schema (
+const exercise_log = new schema(
 	{
 		exercise: {
 			type: String,
@@ -32,7 +32,7 @@ var exercise_log = new schema (
 	}
 )
 
-var workout = new schema (
+const workout = new schema(
 	{
 		start_date: {
 			type: Date
@@ -63,7 +63,7 @@ const point = new schema({
   });
 
 // Create schema for user
-const db_user = db.model('user', {
+const user = new schema({
 	__v: {
 		type: Number,
 		select: false
@@ -99,7 +99,11 @@ const db_user = db.model('user', {
 	location: {
 		type: point
 	}
-})
+});
+
+user.index({location: '2dsphere'})
+
+const db_user = db.model('user', user)
 
 // Export
 module.exports = db_user

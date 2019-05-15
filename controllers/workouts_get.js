@@ -5,7 +5,12 @@ const moment = require('moment')
 
 module.exports = function(req, res, next) {
 
-    let userid = req.user._id
+    let userid = ''
+    
+    if(req.query.user)
+        userid = req.query.user
+    else
+        userid = req.user._id
     //const start = moment.utc(req.query.start, 'yyyy-MM-DD').toDate()
     //const end = moment.utc(req.query.end, 'yyyy-MM-DD').endOf('Day').toDate()
 
@@ -44,6 +49,12 @@ module.exports = function(req, res, next) {
                     weight: "$workout.exercise_log.weight",
                     muscle: "$workout.exercise_log.muscle_group"
                 }
+            }
+        },
+        {
+            $sort:
+            {
+                end: -1
             }
         }
     ]).then(function(workout) {
