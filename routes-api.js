@@ -17,9 +17,7 @@ module.exports = function(app){
 	app.get('/api/users', passport.authenticate('jwt', {session: false}), require('./controllers/users_get'))
 	app.get('/api/user/:id', passport.authenticate('jwt', {session: false}), require('./controllers/user_get'))
 	app.post('/api/user', passport.authenticate('jwt', {session: false}), require('./controllers/user_post'))
-	
-	// Location
-	app.patch('/api/user/:id', passport.authenticate('jwt', {session: false}), require('./controllers/location_update'))
+	app.patch('/api/user/:id', passport.authenticate('jwt', {session: false}), require('./controllers/user_update'))
 	
 
 	// workout

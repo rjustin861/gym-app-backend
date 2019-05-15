@@ -50,6 +50,18 @@ var workout = new schema (
 	}
 )
 
+const point = new schema({
+	type: {
+	  type: String,
+	  enum: ['Point'],
+	  required: true
+	},
+	coordinates: {
+	  type: [Number],
+	  required: true
+	}
+  });
+
 // Create schema for user
 const db_user = db.model('user', {
 	__v: {
@@ -83,10 +95,9 @@ const db_user = db.model('user', {
 	},
 	workout: {
 		type: [workout]
-	},
+	}, 
 	location: {
-		long: Number,
-		lat: Number
+		type: point
 	}
 })
 
