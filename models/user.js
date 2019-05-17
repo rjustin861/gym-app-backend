@@ -5,6 +5,11 @@ const mongoose = require('mongoose')
 
 let schema = mongoose.Schema
 
+const validateEmail = function(email) {
+    const re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    return re.test(email)
+};
+
 const exercise_log = new schema(
 	{
 		exercise: {
@@ -75,14 +80,7 @@ const user = new schema({
 	email: {
 		type: String,
 		required: true,
-		validate: [
-			{
-				validator: function(email) {
-					return email.length > 6
-				},
-				message: 'email must be 7 characters minimum'
-			}
-		]
+		validate: [validateEmail, 'Please fill up a valid email address']
 	},
 	password: {
 		type: String,

@@ -41,6 +41,7 @@ module.exports = function(req, res, next) {
             {
                 newRoot:
                 {
+                    user: "$name",
                     start: "$workout.start_date",
                     end: "$workout.end_date",
                     name: "$workout.exercise_log.exercise",
