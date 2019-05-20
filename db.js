@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect(process.env.MONGODB_URL, {useNewUrlParser: true}, function() {
+mongoose.connect(process.env.MONGODB_PROD_URL, {useNewUrlParser: true}, function() {
 	console.log('Connected to MongoDB');
 })
 
