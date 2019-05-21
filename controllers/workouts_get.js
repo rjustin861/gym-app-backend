@@ -59,7 +59,6 @@ module.exports = function(req, res, next) {
             }
         }
     ]).then(function(workout) {
-        console.log('workout', workout)
         res.status(200).json(workout)
     }).catch(function(error) {
         console.log('error', error)
